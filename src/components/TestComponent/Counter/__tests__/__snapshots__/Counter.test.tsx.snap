@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TestComponent unit should render properly 1`] = `
+<div>
+  <div
+    class="counter"
+  >
+    <div
+      aria-label="display"
+      class="display"
+    >
+      0
+    </div>
+    <div
+      class="btn-group"
+    >
+      <button
+        class="btn inc"
+        name="increment"
+        type="button"
+      >
+        Inc
+      </button>
+      <button
+        class="btn dec"
+        disabled=""
+        name="decrement"
+        type="button"
+      >
+        Dec
+      </button>
+    </div>
+    <div
+      aria-label="warning-message"
+      class="validation-message"
+    >
+      0 is a min value
+    </div>
+  </div>
+</div>
+`;

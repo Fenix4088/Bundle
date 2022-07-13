@@ -1,0 +1,1 @@
+export const SET_SOME_FEATURE = 'SET_SOME_FEATURE';

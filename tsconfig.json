@@ -1,0 +1,43 @@
+// tsconfig in details
+// https://gist.github.com/KRostyslav/82a25c469ffa6652825d58537ac6bc22
+{
+  "compilerOptions": {
+    "sourceMap": true,
+    "allowJs": true,
+    "noImplicitAny": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "noEmitOnError": true,
+    "strict": true,
+    "noUnusedParameters": true,
+    "resolveJsonModule": true,
+    "module": "ES2020",
+    "moduleResolution": "node",
+    "target": "es6",
+    "jsx": "react-jsx",
+    "baseUrl": "src",
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "paths": {
+      "@/*": ["*"],
+      "@UI/*": ["components/UI/*"],
+      "@images/*": ["assets/images/*"],
+      "@styles/*": ["assets/styles/*"],
+      "@utils/*": ["utils/*"]
+    }
+  },
+  "include": ["./src/**/*.ts", "./src/**/*.tsx", "./jest-setup.ts"],
+  "exclude": ["node_modules", "./scripts",
+    "./__mocks__"
+  ],
+  "types": ["node", "jest", "@testing-library/jest-dom"],
+  "ts-node": {
+    "compilerOptions": {
+      "module": "CommonJS",
+      "target": "es5",
+      "baseUrl": "scripts"
+    }
+  }
+}

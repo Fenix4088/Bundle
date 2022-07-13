@@ -1,0 +1,9 @@
+scripts/*
+.eslintrc.js
+.babelrc.js
+babelrc.config.js
+jest.config.js
+setupTests.ts
+node_modules
+__mocks__/*
+coverage/*

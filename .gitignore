@@ -1,0 +1,8 @@
+.DS_*
+.idea/*
+.idea
+node_modules/
+.vscode/
+coverage
+.pnpm-debug.log
+package-lock.json

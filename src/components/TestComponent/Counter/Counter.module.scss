@@ -1,0 +1,50 @@
+.counter {
+  margin-bottom: 100px;
+  position: relative;
+  width: 400px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+
+  .display {
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 50%;
+    background: #bdbef6;
+    border-radius: 10px;
+    font-size: 42px;
+    font-weight: 700;
+  }
+
+  .validation-message {
+    position: absolute;
+    font-size: 18px;
+    bottom: -50px;
+    color: red;
+  }
+
+  .btn-group {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    .btn {
+      padding: 6px 20px;
+      font-size: 18px;
+      font-weight: 500;
+      border-radius: 6px;
+      border: none;
+      cursor: pointer;
+
+      &.inc {
+        background: #1eda1e;
+      }
+      &.dec {
+        background: #e62929;
+      }
+      &:disabled {
+        background: grey;
+        cursor: auto;
+      }
+    }
+  }
+}

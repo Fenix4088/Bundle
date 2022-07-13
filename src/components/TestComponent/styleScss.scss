@@ -1,0 +1,40 @@
+.sass {
+  color: goldenrod;
+}
+
+.block {
+  outline: 1px solid #ddd;
+
+  + .block {
+    margin-top: 15px;
+  }
+}
+
+.scss-global-variables {
+  .variable::after {
+    color: #255bef;
+  }
+  .font-path::after {
+    content: ' #{$font-path}';
+  }
+  .images-path::after {
+    content: ' #{$image-path}';
+  }
+  .svg-path::after {
+    content: ' #{$svg-path}';
+  }
+}
+
+// Two halfs flag
+@function halfs($first, $second, $or: -180deg){
+  @return linear-gradient($or, $first 50%, $second 50%);
+}
+
+.flag-ukraine{
+  width: 144px;
+  height: 90px;
+  border: 1px solid #999;
+  display: inline-block;
+  box-shadow: 1px 1px 1px #CCC;
+  background: halfs(royalblue, yellow);
+}
